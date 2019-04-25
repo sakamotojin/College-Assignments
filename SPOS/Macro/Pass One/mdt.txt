@@ -1,0 +1,9 @@
+ADDITION &arg1,&arg2,&arg3=N4
+MOV ax &arg1
+ADD ax &arg2
+ADD ax &arg3
+MEND
+SUBTRACTION &arg1,&arg2
+MOV ax &arg1
+SUB ax &arg2
+MEND

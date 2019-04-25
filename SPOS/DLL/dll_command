@@ -1,0 +1,10 @@
+1) First create java file 
+2) On terminal
+	2.a) javac java_file_name.java
+	2.b) javah java_file_name
+3) using the header file created, create the c file 
+4) On terminal 
+	4.a) locate jni.h
+	4.b) locate jni_md.h
+	4.c) gcc -fPIC -I(path from the "4.a" command) -I(path from the "4.b" command) -shared -o libcalc.so c_file_name.c
+	4.d) java -Djava.library.path=. CalcJNI
